@@ -55,29 +55,29 @@ eraserButton.addEventListener('click', function(e){
 	}))	
 })
 
-shaderButton.addEventListener('click', function(e){
-	const divs = document.querySelectorAll('#grid');
-	divs.forEach(div => div.addEventListener('mouseover', function(e){
-		div.style.setProperty("--darken","-10%");	
-	}))		
-})
+// shaderButton.addEventListener('click', function(e){
+// 	const divs = document.querySelectorAll('#grid');
+// 	divs.forEach(div => div.addEventListener('mouseover', function(e){
+// 		div.style.setProperty("--darken","-10%");	
+// 	}))		
+// })
 
-preciseButton.addEventListener('click', function(e){
-	const divs = document.querySelectorAll('#grid');
-	let mouseDown = 0;
-	divs.forEach(div => {
-		div.onmouseDown = function(){
-			mouseDown = 1;
-		}
-		div.onmouseUp = function(){
-			mouseDown = 0;
-		}
+// preciseButton.addEventListener('click', function(e){
+// 	const divs = document.querySelectorAll('#grid');
+// 	let mouseDown = 0;
+// 	divs.forEach(div => {
+// 		div.onmouseDown = function(){
+// 			mouseDown = 1;
+// 		}
+// 		div.onmouseUp = function(){
+// 			mouseDown = 0;
+// 		}
 
-		if(mouseDown == 1){
-			div.style.backgroundColor = 'black';
-		}
-	})	
-})
+// 		if(mouseDown == 1){
+// 			div.style.backgroundColor = 'black';
+// 		}
+// 	})	
+// })
 
 clearButton.addEventListener('click', function(e){
 	const divs = document.querySelectorAll('#grid');

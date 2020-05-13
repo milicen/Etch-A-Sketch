@@ -6,21 +6,17 @@
 .container{
 	display: grid;
 	margin: 100px auto;
-	width: 500px;
-	height: 500px;
+	width: 600px;
+	height: 600px;
 	border: solid;
 }
 
 .grid-line{
-	border: solid 1px #fff5f2;
+	border: solid 1px #ff9e4a;
 }
 
 .test{
-	background-color: lightgrey;
 	margin: 0;
 	padding: 0;
 }
 
-.test:hover{
-	background-color: grey;
-}
